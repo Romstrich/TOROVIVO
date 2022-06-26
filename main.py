@@ -29,5 +29,6 @@ def handle_text(message):
 def handle_photo(message):
     print('Пришла фотка')
     print(f'вот такой месадж:\t----------->{message}')
+    this_bot.send_message(message.chat.id,'Классная фотка!!!\tКинь ещё!')
 # Запускаем бота
 this_bot.polling(none_stop=True, interval=0)
